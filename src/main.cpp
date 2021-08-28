@@ -1,4 +1,4 @@
-#include "../build/src/proto_types/types.pb.h"
+#include "types.pb.h"
 #include "small-kv/kv.hpp"
 
 using namespace types;

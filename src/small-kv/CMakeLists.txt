@@ -1,7 +1,4 @@
 
-include_directories(../)
-include_directories(../third_party/protobuf/src)
-
 add_library(small_kv
     kv.cpp
 )
@@ -9,4 +6,5 @@ add_library(small_kv
 target_link_libraries(small_kv
     PRIVATE
         rax
+        protobuf::libprotobuf-lite
 )
