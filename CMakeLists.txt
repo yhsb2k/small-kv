@@ -18,7 +18,7 @@ include_directories(src/third_party/protobuf/src)
 
 add_subdirectory(src/third_party/protobuf/cmake)
 add_subdirectory(src/proto_types)
-add_subdirectory(src/third_party/rax)
+add_subdirectory(third_party/rax)
 add_subdirectory(src/small-kv)
 
 add_executable(${CMAKE_PROJECT_NAME} src/main.cpp)

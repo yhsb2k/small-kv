@@ -2,7 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <google/protobuf/stubs/common.h>
-#include "third_party/rax/rax.h"
+extern "C" {
+#include "rax.h"
+};
 
 using namespace database;
 
