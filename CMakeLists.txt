@@ -11,11 +11,11 @@ set(protobuf_BUILD_TESTS OFF CACHE BOOL "")
 add_subdirectory(third_party/protobuf/cmake)
 find_package(Protobuf)
 
-add_subdirectory(src/proto_types)
 add_subdirectory(third_party/rax)
-add_subdirectory(src/small-kv)
+add_subdirectory(proto_types)
+add_subdirectory(small-kv)
 
-add_executable(${CMAKE_PROJECT_NAME} src/main.cpp)
+add_executable(${CMAKE_PROJECT_NAME} main.cpp)
 
 target_link_libraries(${CMAKE_PROJECT_NAME}
     PRIVATE
