@@ -20,6 +20,12 @@ add_subdirectory(small-kv)
 
 add_executable(${CMAKE_PROJECT_NAME} main.cpp)
 
+target_link_options(${CMAKE_PROJECT_NAME} PRIVATE
+    $<$<CXX_COMPILER_ID:GNU>:-static-libgcc>
+    $<$<CXX_COMPILER_ID:GNU>:-static-libstdc++>
+    $<$<CXX_COMPILER_ID:GNU>:$<$<PLATFORM_ID:Windows>:-static>>
+)
+
 target_link_libraries(${CMAKE_PROJECT_NAME}
     PRIVATE
         small_kv
