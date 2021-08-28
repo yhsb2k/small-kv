@@ -2,15 +2,8 @@
     "configurations":
     [
         {
-            "name": "Win32",
-            "includePath":
-            [
-                "${workspaceFolder}/src/**",
-                "${workspaceFolder}/build/src/proto_types/**"
-            ],
-            "defines":
-            [
-            ]
+            "name": "small-kv",
+            "compileCommands": "build/compile_commands.json"
         }
     ],
     "version": 4
